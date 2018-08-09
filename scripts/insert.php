@@ -1,28 +1,18 @@
+  <?php include 'conn.php';>
+  
   <?php
 
-$con = mysql_connect("webdb","root");
+mysql_select_db($dbname, $con);
 
-if (!$con)
 
-  {
-
-  die('Could not connect: ' . mysql_error());
-
-  }
-
- 
-
-mysql_select_db("webdb", $con);
-
- 
 
 $sql="INSERT INTO contact (firstname, lastname, email, subject, message)
 
 VALUES
 
-('$_POST[firstname]','$_POST[lastname]' , ,'$_POST[email]', ,'$_POST[subject]', ,'$_POST[message]')";
+('$_POST[firstname]','$_POST[lastname]' , '$_POST[email]', '$_POST[subject]', '$_POST[message]')";
 
- 
+
 
 if (!mysql_query($sql,$con))
 
@@ -32,10 +22,12 @@ if (!mysql_query($sql,$con))
 
   }
 
-<!-- echo "1 record added"; -->
+ echo "1 record added";
 
- 
+
 
 mysql_close($con)
 
 ?>
+
+
