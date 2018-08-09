@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="menu.css"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+
+    <title>Curbside Chefs</title>
+</head>
+
+<body>
+
+            <!-- Navigation BAR -->
+
+    <nav>
+        <ul>
+             <li><a href="" "id="logo">CURBSIDE CHEFS <br>FOOD TRUCK AND CATERING </a></li>
+             <li><a href="#home"></a></li>
+             <li><a href="#home"></a></li>             
+            <li><a href="#home" >Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#catering">Catering</a></li>
+            <li><a href="#contact">Contact Us</a></li>           
+        </ul>
+    </nav>
+
+   <!-- <div class="box" id="home"> -->
+              <!-- JAVASCRIPT SLIDESHOW -->
+
+              <div><img id="image1" width="100%" >
+             
+        <script>
+
+            
+           // var images= [];
+
+           var imgArray= [
+           'frontrightside.JPG',
+           'caterevent5.jpg',
+           'fries.jpeg', 
+           'salad.jpg',
+           'flameburger.jpeg',
+           "cheesesteak.jpeg"]
+           var curIndex = 0; //starting point            
+            var time = 3000;
+
+            // image list
+            // images[0]= "fries.jpeg";
+            // images[1]= "coffee.jpeg";
+            // images[2]= "flameburger.jpeg";
+            // images[3]= "cheesesteak.jpeg";
+           
+          function slideShow(){
+            document.getElementById('image1').src=imgArray[curIndex];
+            // document.getElementById('').src=images[i];
+            // images[i].style.display = "none"; 
+             curIndex++;
+            if(curIndex == imgArray.length) {curIndex=0; } 
+                setTimeout("slideShow()", time);
+
+            }
+               slideShow();
+
+        </script>
+
+        <!-- <img name="slide" width="100%" >       -->
+
+        </div>
+
+
+        <!-- ABOUT SECTION -->
+         <!-- </div> -->
+
+        <div class="box" id="about">
+
+                 <h2 style="color:#DCDCDC;"> About </h2>        
+       
+       
+        <p class="ex1">Curbside Chefs is bringing a whole lot of good food to the curb, curbing your hunger and satisfying your penchant for good taste in one fell swoop. How is this possible? Well, they're specializing in comfort food alongside those all American classics with a big menu full of bigger portions to satisfy even the biggest appetites. So hold on to your seats, there's a plethora of good eats on the streets. And it's all coming to you in a food truck roaming in Hartford. <br><br>
+
+        At Curbside Chefs, you can count on their commitment to quality, relegated to using only the freshest ingredients to craft each and every meal. Craving a burger? Wake up your senses with their big ol' breakfast burger, starting with an all beef patty and piled high with a fried egg, hashbrowns and crispy bacon strips. How about the quintessential cheesesteak? Curbside Chefs' got those too, stuffed with steak hot off the grill with oh so much melted cheese. But that's not all Curbside Chefs has to offer. They've got hot dogs, chili dogs, tater tots, and even fried mac & cheese. Yes, you read that right. So why wait? Find Curbside Chefs cruising the curbs in Hartford. Trust us. It's a surefire way to satisfaction.</p>
+
+        </div>
+
+
+        <div class="box" id="menu">
+
+
+
+            <h1>Menu</h1>
+<h4 style="color:white">**Click panels to view details**</h4>
+        <div class="grid">
+            <div class="subs">
+                <h3>Subs</h3>
+                <button class="accordion">Cheese Steak</button>
+                <div class="panel">
+                    <p>Made from thinly sliced beefsteak, melted cheese, mushrooms, peppers and onions in a hoagie roll.</p>
+                </div>
+
+                <button class="accordion">Italian Sausage</button>
+                <div class="panel">
+                    <p>Made from mild italian sausage, melted cheese, mushrooms, peppers and onions in a hoagie roll.</p>
+                </div>
+
+                <button class="accordion">Spicy Sausage</button>
+                <div class="panel">
+                    <p>Made from spicy italian sausage, melted cheese, mushrooms, peppers and onions in a hoagie roll.</p>
+                </div>
+                <button class="accordion">Grilled Chicken</button>
+                <div class="panel">
+                    <p>Made from grilled chicken, melted cheese, mushrooms, peppers and onions in a hoagie roll.</p>
+                </div>
+                <button class="accordion">Fried Chicken</button>
+                <div class="panel">
+                    <p>Made from fried chicken, melted cheese, mushrooms, peppers and onions in a hoagie roll.</p>
+                </div>
+            </div>
+
+            <div class="hotdogs">
+                <h3>Hotdog / Sausage</h3>
+                <!-- <p>Click on the buttons to open the collapsible content.</p> -->
+
+                <button class="accordion">Georgia Hot With Chili And Cheese</button>
+                <div class="panel">
+                    <p>Made from grilled chicken, melted cheese, mushrooms, peppers and onions in a hoagie roll.</p>
+                </div>
+
+                <button class="accordion">Georgia Hot With Sauerkraut</button>
+                <div class="panel">
+                    <p>Made from fried chicken, melted cheese, mushrooms, peppers and onions in a hoagie roll.</p>
+                </div>
+                <button class="accordion">Hot Dog</button>
+                <div class="panel">
+                    <p>Made from thinly sliced beefsteak, melted cheese, mushrooms, peppers and onions in a hoagie roll.</p>
+                </div>
+
+                <button class="accordion">Chili Dog</button>
+                <div class="panel">
+                    <p>Made from mild italian sausage, melted cheese, mushrooms, peppers and onions in a hoagie roll.</p>
+                </div>
+
+                <button class="accordion">Georgia Hot</button>
+                <div class="panel">
+                    <p>Made from spicy italian sausage, melted cheese, mushrooms, peppers and onions in a hoagie roll.</p>
+                </div>
+
+            </div>
+
+            <div class="alacarte">
+                <h3>Alacarte</h3>
+                <!-- <p>Click on the buttons to open the collapsible content.</p> -->
+
+                <button class="accordion">Home Made Fried Macaroni & Cheese</button>
+                <div class="panel">
+                    <p>Made wiht macaroni, melted cheese, butter, salt, pepper and chilled and then fried in peanut oil.</p>
+                </div>
+
+                <button class="accordion">Friench Fries</button>
+                <div class="panel">
+                    <p>Made from potates, salt and cooked in vegetable oil to a crisp.</p>
+                </div>
+                <button class="accordion">Onion Rings</button>
+                <div class="panel">
+                    <p>Made from onions, battered and cooked in vegetable oil to a crisp.</p>
+                </div>
+
+                <button class="accordion">Tater Tots</button>
+                <div class="panel">
+                    <p>Made from potates, salt and cooked in vegetable oil to a crisp.</p>
+                </div>
+
+                <button class="accordion">Tater Tots Loaded</button>
+                <div class="panel">
+                    <p>Made from potates, cooked in vegetable oil to a crisp loaded with cheese, bacon & chili in any combination.</p>
+                </div>
+
+            </div>
+            <div class="breakfast">
+                <h3>Breakfast</h3>
+
+                <button class="accordion">Bacon, Egg & Cheese</button>
+                <div class="panel">
+                    <p>Made with bacon, egg and cheese.</p>
+                </div>
+
+                <button class="accordion">Sausage, Egg & cheese</button>
+                <div class="panel">
+                    <p>Made with bacon, egg and cheese.</p>
+                </div>
+                <button class="accordion">Fried Chicken, Egg & Cheese</button>
+                <div class="panel">
+                    <p>Made with bacon, egg and cheese.</p>
+                </div>
+
+                <button class="accordion">Egg & Cheese</button>
+                <div class="panel">
+                    <p>Made with egg and cheese.</p>
+                </div>
+
+                <button class="accordion">Hash Browns</button>
+                <div class="panel">
+                    <p>Made from potates, cooked in vegetable oil.</p>
+                </div>
+
+            </div>
+
+            <div class="hamburgers">
+                <h3>Hamburger</h3>
+
+                <button class="accordion">Breakfast Burger</button>
+                <div class="panel">
+                    <p>Made with 100% ground beef, bacon, eggs, cheese & hash browns.</p>
+                </div>
+
+                <button class="accordion">Cheese Burger</button>
+                <div class="panel">
+                    <p>Made with 100% ground beef and cheese.</p>
+                </div>
+                <button class="accordion">Hamburger</button>
+                <div class="panel">
+                    <p>Made with 100% ground beef.</p>
+                </div>
+
+            </div>
+            <div class="chicken">
+
+                <h3>Chicken</h3>
+
+                <button class="accordion">Chicken Club</button>
+                <div class="panel">
+                    <p>A boneless breast of chicken, marinated with a special blend of seasonings and grilled for a tender and juicy backyard-grilled taste, served on a toasted multigrain bun with Colby-Jack cheese, Green Leaf lettuce and tomato.</p>
+                </div>
+
+                <button class="accordion">Chicken Tenders</button>
+                <div class="panel">
+                    <p>Most tender part of the chicken breast,marinated in special seasonings, hand-breaded and cooked to perfection.</p>
+                </div>
+
+            </div>
+            <div class="nachos">
+
+                <h3>Nachos</h3>
+
+                <button class="accordion">Nachos With Chili</button>
+                <div class="panel">
+                    <p>Nachos served with Cheese, sour cream, salsa, jalapenos & homemade chili.</p>
+                </div>
+
+                <button class="accordion">Nachos</button>
+                <div class="panel">
+                    <p>Nachos served with Cheese, sour cream, salsa & jalapenos.</p>
+                </div>
+
+            </div>
+            <div class="vegetarian">
+
+                <h3>Vegetarian</h3>
+
+                <button class="accordion">Grilled Cheese</button>
+                <div class="panel">
+                    <p>Made with cheddar cheese, butter toasted bread grilled to perfection.</p>
+                </div>
+
+                <button class="accordion">Roasted Vegies</button>
+                <div class="panel">
+                    <p>Made with mushrooms, onions & peppers.</p>
+                </div>
+                <button class="accordion">Fried Eggs & Vegies</button>
+                <div class="panel">
+                    <p>Made with mushrooms, onions, peppers & fried eggs.</p>
+                </div>
+
+            </div>
+            <div class="combomeals">
+                <h3>Combo meals</h3>
+
+                <button class="accordion">Hamburger</button>
+                <div class="panel">
+                    <p>Hambuger served with french fries and a soda.</p>
+                </div>
+
+                <button class="accordion">Grinder</button>
+                <div class="panel">
+                    <p>Grinder served with french fries and a soda.</p>
+                </div>
+
+            </div>
+
+            <div class="kidsmeals">
+                <h3>Kids Meals</h3>
+
+                <button class="accordion">Hotdog</button>
+                <div class="panel">
+                    <p>Hotdog served with french fries and a soda.</p>
+                </div>
+
+                <!--  <button class="accordion">Grinder</button>
+              <div class="panel">
+                <p>Nachos served with Cheese, sour cream, salsa & jalapenos.</p>
+              </div> -->
+
+            </div>
+            <div class="drinks">
+
+                <h3>Drinks</h3>
+
+                <button class="accordion">Drinks</button>
+                <div class="panel">
+                    <p>Assortment of sodas.</p>
+                </div>
+
+                <button class="accordion">Bottled Water</button>
+                <div class="panel">
+                    <p>Clear purified water.</p>
+                </div>
+            </div>
+
+            <div class="extras">
+                <h3>Extras</h3>
+
+                <button class="accordion">Bacon</button>
+                <div class="panel">
+                    <p>Crispy Bacon Fried to a crisp.</p>
+                </div>
+
+                <button class="accordion">Cheese</button>
+                <div class="panel">
+                    <p>Choice of Cheddar, Swiss & provolone.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+        </script>
+
+
+        </div>
+
+
+        <div class="box" id="catering">
+            <h3>Catering</h3></div>
+        
+
+
+            <!-- FORM FOR CONTACT PAGE -->
+
+         <div class="box" id="contact">
+        <h2>Contact Us</h2>
+        <br>
+
+
+
+        <style>
+                        
+            input[type=text],
+            select,
+            textarea {
+                width: 40%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-top: 6px;
+                margin-bottom: 16px;
+                resize: vertical;
+            }
+            
+            input[type=email],
+            select,
+            textarea {
+                width: 40%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-top: 6px;
+                margin-bottom: 16px;
+                resize: vertical;
+            }
+            
+            input[type=submit] {
+                background-color: #00007f;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            
+            input[type=submit]:hover {
+                background-color: #4775ff;
+            }
+            
+            .container {
+                border-radius: 5px;
+                /*background-color: #f2f2f2;*/
+                padding: 12px;
+            }
+        </style>
+
+
+              
+
+        <form action="/insert.php" method="post">
+            First name:
+            <br>
+            <input type="text" name="firstname" value="">
+            <br> Last name:
+            <br>
+            <input type="text" name="lastname" value="">
+            <br>
+            <br> Email:
+            <br>
+            <input type="email" name="email" value="">
+            <br>
+            <br> Subject:
+            <br>
+            <input type="text" name="subject" value="">
+            <br>
+            
+            Message:
+            <br>
+            <textarea id="message" name="message" placeholder="Write something.." style="height:100px"></textarea> <br>
+            <input type="submit" value="Submit">
+
+        </form>
+
+    </div>
+
+
+        </div>
+
+
+</body>
+</html>
